@@ -36,7 +36,7 @@ if(isset($_POST) && !empty($_POST)){
 			$req->execute();
 
 			$user = current($req->fetchAll(PDO::FETCH_OBJ));
-			echo $user;
+
 			if($user AND $user->id){
 				if($user->pseudo == $pseudo && $user->password == $password){
 					$_SESSION['logged']['pseudo'] = $user->pseudo;

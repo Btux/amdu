@@ -1,6 +1,9 @@
 <?php
 require 'libs/config.php';
 
+if(!isset($_SESSION['logged']['id'])){
+        header('Location: login.php');
+}
 $DB = new DB();
 
 $req = $DB->db->query('SELECT COUNT(id) FROM portfolios');

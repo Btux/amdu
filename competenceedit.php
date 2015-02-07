@@ -1,6 +1,9 @@
 <?php
 require 'libs/config.php';
 
+if(!isset($_SESSION['logged']['id'])){
+        header('Location: login.php');
+}
 
 if(isset($_POST) AND !empty($_POST['content'])){
 

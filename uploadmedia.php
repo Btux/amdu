@@ -1,6 +1,10 @@
 <?php
 require 'libs/config.php';
 
+if(!isset($_SESSION['logged']['id'])){
+        header('Location: login.php');
+}
+
 if(isset($_FILES) AND !empty($_FILES['image']['name'])){
 	
 	$imgExtensions = array('jpg','png', 'gif','jpeg');
