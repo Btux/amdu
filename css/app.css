@@ -1,0 +1,98 @@
+@charset "UTF-8";
+body {
+  background-image: url("../images/bg.jpg");
+  -webkit-background-size: cover;
+  /* pour anciens Chrome et Safari */
+  background-size: cover;
+  /* version standardis├®e */ }
+
+html, body, #portfolioApp {
+  height: 100%;
+  width: 100%;
+  font-family: Lato, sans-serif; }
+
+#portfolioApp {
+  /* border-top: 4px solid #000000; */ }
+  #portfolioApp .en-tete {
+    border: none;
+    max-height: 10%; }
+  #portfolioApp .content .container {
+    height: 100%; }
+
+.navbar {
+  border-radius: 0px; }
+
+.navbar-default {
+  background-color: white; }
+
+.navbar-brand img {
+  margin-right: 5px;
+  float: left; }
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+  display: block; }
+
+.accroche {
+  text-align: center;
+  padding: 2em 0; }
+  .accroche h1, .accroche h3 {
+    color: #FFF; }
+
+.badges {
+  padding: 2em 0; }
+  .badges img {
+    width: 100%; }
+
+.in {
+  background-color: black; }
+
+.button-black {
+  margin-top: 1em;
+  padding: 0.5em  1em;
+  border-radius: 4px;
+  background-color: #333333;
+  color: white; }
+
+.portfolios, .competence, .contact {
+  padding: 1em 0 4em 0;
+  background-color: white; }
+
+.portfolio {
+  margin-bottom: 15px; }
+  .portfolio .portfolio-entry {
+    border: 1px solid #E4E4E4; }
+  .portfolio img {
+    width: 100%; }
+  .portfolio .portfolio-body {
+    border: 1px solid #E0E0E0; }
+  .portfolio .portfolio-desc {
+    display: none; }
+
+.login {
+  background-color: white; }
+
+.contact-img img {
+  width: 100%; }
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  .accroche h1 {
+    font-size: 1.5em; } }
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .accroche h1 {
+    font-size: 2em; } }
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .accroche h1 {
+    font-size: 3em; } }
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .accroche h1 {
+    font-size: 4em; } }
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .accroche h1 {
+    font-size: 5em; } }
+
+/*# sourceMappingURL=app.css.map */
